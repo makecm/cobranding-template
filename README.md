@@ -4,12 +4,12 @@ This template makes cobranding logos:
 
 <img src="https://cdn.make.cm/make/s/cobrand?format=png&customSize[width]=660&customSize[height]=180&customSize[unit]=px&data[color]=rgba(150,150,150,.5)&data[type]=bar&allowTransparency=true&data[host]=https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg&data[guest]=https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="" />
 
-
- "host": "https://yoururl/yourlogo.svg",
- "guest": "https://theirurl/theirlogo.svg",
- "color": "",
- "type": "bar"
- 
+```
+ "host"  : "https://yoururl/yourlogo.svg",
+ "guest" : "https://theirurl/theirlogo.svg",
+ "color" : "rgba(200,200,200,0.5)",
+ "type". : "bar"
+ ```
 
 ### supported cobranding types
 bar, vs, x, +
