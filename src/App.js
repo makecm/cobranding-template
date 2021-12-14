@@ -1,36 +1,39 @@
 import PropTypes from "prop-types";
 import './App.css';
-import Shapes from './components/shapes/shapes'
-import Logos from './components/logos/logos'
-import {ReactComponent as MakeLogo} from './logo.svg'
-import {ReactComponent as ReactLogo} from './react-logo.svg'
 
-function App({ headline, showLogos, backgroundImage }) {
+
+function App({ host, guest, type, color, gap }) {
   return (
-    <div className="App" style={{ backgroundImage: `url('${backgroundImage}')` }}>
-      {showLogos && (
-        <Logos logoOne={<MakeLogo />} logoTwo={<ReactLogo />} />
-      )}
+    <div className="App" style={{color:`${color} `}}>
+<img  className="host" src={host} /> 
+<span class={type} ></span> 
+<img   className="guest"  src={guest} /> 
 
-      <h1>{headline}</h1>
-
-      <div className="shape-container">
-        <Shapes />
-      </div>
+ 
     </div>
   );
 }
 
 App.propTypes = {
-  headline: PropTypes.string,
-  showLogos: PropTypes.string,
-  backgroundImage: PropTypes.string,
+  host: PropTypes.string,
+  guest: PropTypes.string,
+  color: PropTypes.string,
+  gap: PropTypes.string,
+  type: PropTypes.string,
 }
 
 App.defaultProps = {
-  headline: 'Hello World',
-  showLogos: true,
-  backgroundImage: '',
+  host: '',
+  guest: '',
+  color: '',
+  gap: '5',
+  type: 'bar',
+
+
+
 }
+
+
+
 
 export default App;
