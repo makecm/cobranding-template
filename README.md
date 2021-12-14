@@ -1,14 +1,20 @@
-# Make Hello World Starter Template (React)
+# Make Cobranding Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This template makes cobranding logos: 
 
-## Looking for a different language?
-- React
-- [Vue](https://github.com/Outfitio/make-hello-world-vue-template)
-- [Angular](https://github.com/Outfitio/make-hello-world-angular-template)
+<img src="https://cdn.make.cm/make/s/cobrand?format=png&customSize[width]=660&customSize[height]=180&customSize[unit]=px&data[color]=rgba(150,150,150,.5)&data[type]=bar&allowTransparency=true&data[host]=https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg&data[guest]=https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="" />
 
-<img src="https://files.outfit.io/media_library_items/236740/Screen%2520Shot%25202020-11-03%2520at%252010.34.34%2520am.png" style="width: 60%; margin: 0 auto; display: block;" alt="make starter template" />
 
+ "host": "https://yoururl/yourlogo.svg",
+ "guest": "https://theirurl/theirlogo.svg",
+ "color": "",
+ "type": "bar"
+ 
+
+### supported cobranding types
+bar, vs, x, +
+ 
+  
 ## Development server
 
 Install all necessary dependencies `yarn install`
